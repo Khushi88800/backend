@@ -11,7 +11,7 @@ const databaseConnect = async () => {
     });
     console.log(`Connected to DB: ${conn.connection.host}`);
   } catch (err) {
-    console.error("Not connected to the database:", err.message);
+    console.error("Not connected to the database :", err.message);
     process.exit(1);
   }
 };
