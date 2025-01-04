@@ -54,7 +54,11 @@ app.all('*', (_req, res) => {
     res.status(404).send('OOPS!!! 404 Page Not Found ');
 });
 
-app.listen(PORT, async () => {
-    await databaseconnect();
-    console.log(`app is running ar http://localhost:${PORT}`)
-})
+app.listen(5000, '0.0.0.0', () => {
+     await databaseconnect();
+  console.log('Server is running on http://0.0.0.0:5000');
+});
+
+// app.listen(PORT, async () => {
+//     console.log(`app is running ar http://localhost:${PORT}`)
+// })
