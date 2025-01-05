@@ -54,7 +54,7 @@ app.all('*', (_req, res) => {
     res.status(404).send('OOPS!!! 404 Page Not Found ');
 });
 
-app.listen(4000, '0.0.0.0', () => {
+app.listen(5000, '0.0.0.0', () => {
      await databaseconnect();
   console.log('Server is running on http://0.0.0.0:5000');
 });
